@@ -1,0 +1,31 @@
+/* ================================================
+   Restoran Jezero — Custom CSS
+   ================================================
+   UPUTE:
+   - Mijenjaj Bootstrap varijable u :root
+   - Custom stilove piši ispod sekcije s varijablama
+   - NE dirај bootstrap.min.css
+   ================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap');
+
+:root {
+    /* TODO (CSS Dev / Lead Dev):
+       Postavi boje brenda restorana.
+       Preporučena paleta: tople, zemljane boje.
+       Primjer: bordo, zlatna, krem.
+
+       --bs-primary: ;
+       --bs-primary-rgb: ;
+       --bs-body-font-family: ;
+       --bs-border-radius: ;
+    */
+}
+
+/* TODO: Hero min-height i background */
+
+/* TODO: Navbar custom stilovi */
+
+/* TODO: Card hover efekt za meni stavke */
+
+/* TODO: Ostali custom stilovi */
