@@ -40,7 +40,7 @@ Bootstrap `data-bs-*` atribute i Bootstrap JS koji je već linkан u `index.htm
 ### Korak 1 — Kloniraj repo
 
 ```bash
-git clone https://github.com/[username]/restoran-jezero.git
+git clone https://github.com/bozoperic/restoran-jezero.git
 cd restoran-jezero
 ```
 
