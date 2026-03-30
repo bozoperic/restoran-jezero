@@ -26,10 +26,10 @@ Bootstrap `data-bs-*` atribute i Bootstrap JS koji je već linkан u `index.htm
 
 | Uloga | Učenik | Branch | Zadatak |
 |-------|--------|--------|---------|
-| **Lead Developer** | *(upišite ime)* | `feature/navigacija` + `feature/footer` | Navbar, "O nama", Footer, koordinacija tima |
-| **UI Developer** | *(upišite ime)* | `feature/hero` | Hero sekcija, vizualni identitet |
-| **Content Developer** | *(upišite ime)* | `feature/meni` | Meni sekcija s tabovima/accordionom i karticama |
-| **Form Developer** | *(upišite ime)* | `feature/rezervacija` | Forma za rezervaciju, modal, validacija |
+| **Lead Developer** | *Luka Pasalic* | `feature/navigacija` + `feature/footer` | Navbar, "O nama", Footer, koordinacija tima |
+| **UI Developer** | *Karlo Buljan* | `feature/hero` | Hero sekcija, vizualni identitet |
+| **Content Developer** | *Viktor Cacija* | `feature/meni` | Meni sekcija s tabovima/accordionom i karticama |
+| **Form Developer** | *Luka Dalic* | `feature/rezervacija` | Forma za rezervaciju, modal, validacija |
 
 > **Napomena:** Lead Developer mergea PR-ove i rješava konflikte. Svaki član je reviewer za PR kolege do njega.
 
