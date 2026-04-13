@@ -1,0 +1,75 @@
+/* ================================================
+   Restoran Jezero — Custom CSS
+   Bootstrap-only projekt (bez custom JS-a)
+   ================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap');
+
+:root {
+  /* Brand palette (tople, zemljane boje) */
+  --jezero-bordo: #7a1f2b;
+  --jezero-bordo-rgb: 122, 31, 43;
+  --jezero-zlatna: #c8a24a;
+  --jezero-krem: #f6f0e4;
+  --jezero-tamna: #2b1a14;
+
+  /* Bootstrap overrides */
+  --bs-primary: var(--jezero-bordo);
+  --bs-primary-rgb: var(--jezero-bordo-rgb);
+  --bs-body-font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --bs-border-radius: 1rem;
+}
+
+body {
+  color: var(--jezero-tamna);
+  background: #fff;
+}
+
+h1, h2, h3, h4, h5, h6,
+.section-title {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+.section-padding {
+  padding: clamp(3rem, 5vw, 5rem) 0;
+}
+
+.bg-surface {
+  background: linear-gradient(180deg, #ffffff 0%, var(--jezero-krem) 100%);
+}
+
+.section-title {
+  letter-spacing: 0.2px;
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--jezero-bordo);
+  --bs-btn-border-color: var(--jezero-bordo);
+  --bs-btn-hover-bg: #641824;
+  --bs-btn-hover-border-color: #641824;
+  --bs-btn-active-bg: #571420;
+  --bs-btn-active-border-color: #571420;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--jezero-bordo);
+  --bs-btn-border-color: var(--jezero-bordo);
+  --bs-btn-hover-bg: var(--jezero-bordo);
+  --bs-btn-hover-border-color: var(--jezero-bordo);
+}
+
+.card {
+  border-radius: 1.25rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: rgba(var(--jezero-bordo-rgb), 0.5);
+  box-shadow: 0 0 0 .25rem rgba(var(--jezero-bordo-rgb), 0.15);
+}
+
+/* Poboljšanje vidljivosti validacijskih ikona na svijetloj podlozi */
+.is-valid,
+.is-invalid {
+  background-position: right calc(.375em + .5rem) center;
+}

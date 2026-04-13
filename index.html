@@ -48,11 +48,129 @@
          Branch: feature/rezervacija
          ============================================ -->
 
-    <!-- TODO: Sekcija s formom za rezervaciju:
-         Ime i prezime, Email, Telefon, Datum (type=date),
-         Broj osoba (select 1-10), Posebni zahtjevi (textarea).
-         Bootstrap validacijske klase (is-valid/is-invalid) na
-         minimalno 2 polja. Submit gumb. -->
+    <section id="rezervacija" class="section-padding bg-surface">
+        <div class="container">
+            <div class="row align-items-end g-3 mb-4">
+                <div class="col-lg-8">
+                    <h2 class="section-title mb-2">Rezervacija stola</h2>
+                    <p class="text-secondary mb-0">Rezervirajte stol brzo i jednostavno. Potvrdu detalja dobit ćete na email ili telefon.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#rezervacijaModal">
+                        Brza rezervacija
+                    </button>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-7">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body p-4 p-md-5">
+                            <form class="row g-3" action="#" method="post">
+                                <div class="col-12">
+                                    <label for="rezIme" class="form-label">Ime i prezime</label>
+                                    <input id="rezIme" name="ime" type="text" class="form-control is-valid" placeholder="Unesite ime i prezime" required>
+                                    <div class="valid-feedback">Izgleda dobro.</div>
+                                    <div class="invalid-feedback">Unesite ime i prezime.</div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="rezEmail" class="form-label">Email</label>
+                                    <input id="rezEmail" name="email" type="email" class="form-control is-valid" placeholder="imeprezime@email.com" required>
+                                    <div class="valid-feedback">Email je ispravan.</div>
+                                    <div class="invalid-feedback">Unesite ispravan email.</div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="rezTelefon" class="form-label">Telefon</label>
+                                    <input id="rezTelefon" name="telefon" type="tel" class="form-control" placeholder="060/123-456" required>
+                                    <div class="invalid-feedback">Unesite broj telefona.</div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="rezDatum" class="form-label">Datum</label>
+                                    <input id="rezDatum" name="datum" type="date" class="form-control" required>
+                                    <div class="invalid-feedback">Odaberite datum.</div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="rezVrijeme" class="form-label">Vrijeme</label>
+                                    <input id="rezVrijeme" name="vrijeme" type="time" class="form-control" required>
+                                    <div class="invalid-feedback">Odaberite vrijeme.</div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="rezOsobe" class="form-label">Broj osoba</label>
+                                    <select id="rezOsobe" name="osobe" class="form-select" required>
+                                        <option value="" selected disabled>Odaberite…</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                    <div class="invalid-feedback">Odaberite broj osoba (1–10).</div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="rezZona" class="form-label">Zona</label>
+                                    <select id="rezZona" name="zona" class="form-select">
+                                        <option value="unutra" selected>Unutra</option>
+                                        <option value="terasa">Terasa</option>
+                                        <option value="uz-jezero">Uz jezero</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="rezNapomena" class="form-label">Posebni zahtjevi</label>
+                                    <textarea id="rezNapomena" name="napomena" class="form-control" rows="4" placeholder="Alergeni, dječija stolica, rođendansko iznenađenje…"></textarea>
+                                </div>
+
+                                <div class="col-12 d-flex flex-wrap gap-2 align-items-center justify-content-between pt-2">
+                                    <div class="small text-secondary">Klikom na “Pošalji upit” šaljete zahtjev za rezervaciju.</div>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#rezervacijaModal">
+                                            Otvori modal
+                                        </button>
+                                        <button type="submit" class="btn btn-primary">
+                                            Pošalji upit
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body p-4 p-md-5">
+                            <h3 class="h5 mb-3">Napomene</h3>
+                            <ul class="list-unstyled mb-0">
+                                <li class="d-flex gap-2 mb-2">
+                                    <span class="badge text-bg-primary rounded-pill">1</span>
+                                    <span class="text-secondary">Rezervacije primamo svaki dan od 10:00 do 22:00.</span>
+                                </li>
+                                <li class="d-flex gap-2 mb-2">
+                                    <span class="badge text-bg-primary rounded-pill">2</span>
+                                    <span class="text-secondary">Za grupe 10+ preporučujemo telefonsku potvrdu.</span>
+                                </li>
+                                <li class="d-flex gap-2">
+                                    <span class="badge text-bg-primary rounded-pill">3</span>
+                                    <span class="text-secondary">Alergene navedite u polju “Posebni zahtjevi”.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!-- ============================================
@@ -69,8 +187,53 @@
     <!-- TODO: Modal s kratkom formom (ime, datum, broj osoba)
          i dva gumba: Odustani / Potvrdi -->
 
+    <div class="modal fade" id="rezervacijaModal" tabindex="-1" aria-labelledby="rezervacijaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="rezervacijaModalLabel">Brza rezervacija</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zatvori"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3" action="#" method="post">
+                        <div class="col-12">
+                            <label for="modalIme" class="form-label">Ime</label>
+                            <input id="modalIme" name="modalIme" type="text" class="form-control" placeholder="Vaše ime" required>
+                            <div class="invalid-feedback">Unesite ime.</div>
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="modalDatum" class="form-label">Datum</label>
+                            <input id="modalDatum" name="modalDatum" type="date" class="form-control" required>
+                            <div class="invalid-feedback">Odaberite datum.</div>
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="modalOsobe" class="form-label">Osobe</label>
+                            <select id="modalOsobe" name="modalOsobe" class="form-select" required>
+                                <option value="" selected disabled>Odaberite…</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                            <div class="invalid-feedback">Odaberite broj osoba.</div>
+                        </div>
+                    </form>
+                    <div class="small text-secondary mt-3">Ovo je brzi upit. Za dodatne želje koristite punu formu u sekciji “Rezervacija”.</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Odustani</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Potvrdi</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script>
 </body>
 </html>
