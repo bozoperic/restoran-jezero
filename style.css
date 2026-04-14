@@ -7,25 +7,50 @@
    - NE dirај bootstrap.min.css
    ================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap');
 
-:root {
-    /* TODO (CSS Dev / Lead Dev):
-       Postavi boje brenda restorana.
-       Preporučena paleta: tople, zemljane boje.
-       Primjer: bordo, zlatna, krem.
+   :root {
+       /* TODO (CSS Dev / Lead Dev):
+          Postavi boje brenda restorana.
+          Preporučena paleta: tople, zemljane boje.
+          Primjer: bordo, zlatna, krem.
+   
+          --bs-primary: ;
+          --bs-primary-rgb: ;
+          --bs-body-font-family: ;
+          --bs-border-radius: ;
+       */
+       --bs-primary: #d4a64a;
+       --bs-primary-rgb: 212, 166, 74;
+       --bs-body-font-family: 'Lato', sans-serif;
+       --bs-border-radius: 0.6rem;
+       --jezero-krem: #f6efe2;
+       --jezero-smedja: #2f2118;
+   }
+   
+   /* Navbar (Luka Pasalic): topla paleta + jasna čitljivost */
+   .bg-jezero-nav {
+       background-color: #2f2118;
+   }
 
-       --bs-primary: ;
-       --bs-primary-rgb: ;
-       --bs-body-font-family: ;
-       --bs-border-radius: ;
-    */
-}
+   .navbar-brand {
+       font-family: 'Playfair Display', serif;
+       letter-spacing: 0.4px;
+   }
 
-/* TODO: Hero min-height i background */
+   .navbar .nav-link {
+       color: #f6efe2;
+       font-weight: 600;
+       transition: color 0.2s ease;
+   }
 
-/* TODO: Navbar custom stilovi */
-
-/* TODO: Card hover efekt za meni stavke */
-
-/* TODO: Ostali custom stilovi */
+   .navbar .nav-link:hover,
+   .navbar .nav-link:focus,
+   .navbar .nav-link.active {
+       color: #d4a64a;
+   }
+   
+   /* TODO: Card hover efekt za meni stavke */
+   
+   /* TODO: Ostali custom stilovi */
+   
