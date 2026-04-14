@@ -49,6 +49,32 @@
        color: #d4a64a;
    }
    
+   /* HERO (Karlo Buljan): min-height, tamni overlay i terasa s pogledom na more */
+   .hero-section {
+       min-height: 90vh;
+       background:
+           linear-gradient(rgba(47, 33, 24, 0.62), rgba(47, 33, 24, 0.62)),
+           url("https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1600&q=80")
+           center/cover no-repeat;
+   }
+   
+   /* TIPOGRAFIJA: naslovi koriste Playfair zbog elegantnijeg izgleda */
+   h1, h2, h3, h4, h5, h6 {
+       font-family: 'Playfair Display', serif;
+   }
+   
+   /* HERO DUGMAD: lagana dorada boja za bolji kontrast */
+   .hero-section .btn-primary {
+       color: var(--jezero-smedja);
+   }
+   
+   .hero-section .btn-outline-light:hover {
+       background-color: var(--jezero-krem);
+       color: var(--jezero-smedja);
+   }
+   
+   /* TODO: Navbar custom stilovi */
+   
    /* TODO: Card hover efekt za meni stavke */
    
    /* TODO: Ostali custom stilovi */
