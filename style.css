@@ -7,25 +7,54 @@
    - NE dirај bootstrap.min.css
    ================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap');
 
-:root {
-    /* TODO (CSS Dev / Lead Dev):
-       Postavi boje brenda restorana.
-       Preporučena paleta: tople, zemljane boje.
-       Primjer: bordo, zlatna, krem.
-
-       --bs-primary: ;
-       --bs-primary-rgb: ;
-       --bs-body-font-family: ;
-       --bs-border-radius: ;
-    */
-}
-
-/* TODO: Hero min-height i background */
-
-/* TODO: Navbar custom stilovi */
-
-/* TODO: Card hover efekt za meni stavke */
-
-/* TODO: Ostali custom stilovi */
+   :root {
+       /* TODO (CSS Dev / Lead Dev):
+          Postavi boje brenda restorana.
+          Preporučena paleta: tople, zemljane boje.
+          Primjer: bordo, zlatna, krem.
+   
+          --bs-primary: ;
+          --bs-primary-rgb: ;
+          --bs-body-font-family: ;
+          --bs-border-radius: ;
+       */
+       --bs-primary: #d4a64a;
+       --bs-primary-rgb: 212, 166, 74;
+       --bs-body-font-family: 'Lato', sans-serif;
+       --bs-border-radius: 0.6rem;
+       --jezero-krem: #f6efe2;
+       --jezero-smedja: #2f2118;
+   }
+   
+   /* HERO (Karlo Buljan): min-height, tamni overlay i terasa s pogledom na more */
+   .hero-section {
+       min-height: 90vh;
+       background:
+           linear-gradient(rgba(47, 33, 24, 0.62), rgba(47, 33, 24, 0.62)),
+           url("https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1600&q=80")
+           center/cover no-repeat;
+   }
+   
+   /* TIPOGRAFIJA: naslovi koriste Playfair zbog elegantnijeg izgleda */
+   h1, h2, h3, h4, h5, h6 {
+       font-family: 'Playfair Display', serif;
+   }
+   
+   /* HERO DUGMAD: lagana dorada boja za bolji kontrast */
+   .hero-section .btn-primary {
+       color: var(--jezero-smedja);
+   }
+   
+   .hero-section .btn-outline-light:hover {
+       background-color: var(--jezero-krem);
+       color: var(--jezero-smedja);
+   }
+   
+   /* TODO: Navbar custom stilovi */
+   
+   /* TODO: Card hover efekt za meni stavke */
+   
+   /* TODO: Ostali custom stilovi */
+   
