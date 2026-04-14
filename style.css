@@ -28,25 +28,24 @@
        --jezero-smedja: #2f2118;
    }
    
-   /* Navbar (Luka Pasalic): topla paleta + jasna čitljivost */
-   .bg-jezero-nav {
+   /* TIPOGRAFIJA: naslovi koriste Playfair zbog elegantnijeg izgleda */
+   h1, h2, h3, h4, h5, h6 {
+       font-family: 'Playfair Display', serif;
+   }
+
+   /* Footer (Luka Pasalic): elegantan i topao završetak stranice */
+   .footer-jezero {
        background-color: #2f2118;
    }
 
-   .navbar-brand {
-       font-family: 'Playfair Display', serif;
-       letter-spacing: 0.4px;
-   }
-
-   .navbar .nav-link {
+   .footer-link {
        color: #f6efe2;
-       font-weight: 600;
+       text-decoration: none;
        transition: color 0.2s ease;
    }
 
-   .navbar .nav-link:hover,
-   .navbar .nav-link:focus,
-   .navbar .nav-link.active {
+   .footer-link:hover,
+   .footer-link:focus {
        color: #d4a64a;
    }
    
