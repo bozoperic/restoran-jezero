@@ -59,6 +59,10 @@
          Branch: feature/hero
          ============================================ -->
 
+    <!-- TODO: Hero sekcija s backgroundom (bg-dark text-white),
+         min-height 90vh, naslov restorana, kratak opis,
+         dva gumba: "Pogledaj meni" i "Rezerviraj stol".
+         Centriran sadržaj. -->
     <!-- ===== KARLO BULJAN START: HERO SEKCIJA ===== -->
     <!-- HERO WRAPPER: min-height 90vh + pozadinska slika + centriranje sadržaja -->
     <header id="hero" class="hero-section d-flex align-items-center">
@@ -127,13 +131,38 @@
 
 
     <!-- ============================================
-         O NAMA + FOOTER — radi: [ime učenika - Lead Dev]
+         O NAMA + FOOTER — radi: [Luka Pasalic - Lead Dev]
          Branch: feature/footer
          ============================================ -->
 
-    <!-- TODO: Kratka "O nama" sekcija s tekstom i slikom.
-         Footer s adresom, radnim vremenom i copyright tekstom.
-         Navigacijski linkovi u footeru. -->
+    <footer id="kontakt" class="footer-jezero text-light pt-5 pb-3 mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <h5 class="mb-3">Restoran Jezero</h5>
+                    <p class="mb-1">Jezerska 12, 71000 Sarajevo</p>
+                    <p class="mb-0">Telefon: +387 33 123 456</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h5 class="mb-3">Radno vrijeme</h5>
+                    <p class="mb-1">Ponedjeljak - Petak: 10:00 - 23:00</p>
+                    <p class="mb-1">Subota: 11:00 - 00:00</p>
+                    <p class="mb-0">Nedjelja: 11:00 - 22:00</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h5 class="mb-3">Brzi linkovi</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a class="footer-link" href="#pocetna">Početna</a></li>
+                        <li><a class="footer-link" href="#meni">Meni</a></li>
+                        <li><a class="footer-link" href="#rezervacija">Rezervacija</a></li>
+                        <li><a class="footer-link" href="#o-nama">O nama</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-light border-opacity-25 my-4">
+            <p class="text-center small mb-0">&copy; 2026 Restoran Jezero. Sva prava zadržana.</p>
+        </div>
+    </footer>
 
 
     <!-- Modal za rezervaciju — koriste i navigacija i hero -->
