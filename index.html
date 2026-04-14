@@ -48,6 +48,58 @@
             </div>
         </div>
     </nav>
+    <!-- TODO: Navbar s logom "Restoran Jezero", linkovima
+         (Početna, Meni, Rezervacija, O nama, Kontakt)
+         i gumbom "Rezerviraj stol" koji otvara modal.
+         Na mobitelu hamburger meni. Sticky top. -->
+
+
+    <!-- ============================================
+         HERO — radi: Karlo Buljan (UI Dev)
+         Branch: feature/hero
+         ============================================ -->
+
+    <!-- ===== KARLO BULJAN START: HERO SEKCIJA ===== -->
+    <!-- HERO WRAPPER: min-height 90vh + pozadinska slika + centriranje sadržaja -->
+    <header id="hero" class="hero-section d-flex align-items-center">
+        <!-- CONTAINER: ograničava širinu sadržaja i drži layout urednim -->
+        <div class="container">
+            <!-- ROW + COL: Bootstrap grid za responzivnu širinu teksta -->
+            <div class="row">
+                <!-- col-lg-7: širi tekst na desktopu, puni ekran na mobitelu -->
+                <div class="col-12 col-lg-7">
+                    <!-- badge: mali dekorativni label iznad naslova -->
+                    <span class="badge rounded-pill bg-warning text-dark px-3 py-2 mb-3">
+                        Tradicionalna kuhinja uz pogled na more
+                    </span>
+
+                    <!-- display-3: veliki naslov, fw-bold: deblji font -->
+                    <h1 class="display-3 fw-bold text-light mb-3">
+                        Restoran Jezero
+                    </h1>
+
+                    <!-- lead: istaknut uvodni tekst -->
+                    <p class="lead text-light mb-4">
+                        Uživajte u vrhunskoj hrani na terasi uz miris mora i zalazak
+                        sunca.
+                    </p>
+
+                    <!-- d-flex + gap: horizontalni raspored dugmadi sa razmakom -->
+                    <div class="d-flex flex-wrap gap-3">
+                        <!-- btn btn-primary: glavno CTA dugme -->
+                        <a href="#meni" class="btn btn-primary btn-lg px-4 py-2">
+                            Pogledaj meni
+                        </a>
+                        <!-- btn-outline-light: sekundarno dugme -->
+                        <a href="#rezervacija" class="btn btn-outline-light btn-lg px-4 py-2" data-bs-toggle="modal" data-bs-target="#rezervacijaModal">
+                            Rezerviraj stol
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ===== KARLO BULJAN END: HERO SEKCIJA ===== -->
 
 
     <!-- ============================================
