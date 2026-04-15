@@ -116,6 +116,180 @@
          Predjela / Glavna jela / Deserti / Pića.
          Svaka kategorija: min 3 kartice s nazivom, opisom i cijenom.
          Grid: col-md-4. -->
+  <!-- ============================================
+         MENI — radi: Viktor Cacija
+         Branch: feature/meni
+         ============================================ -->
+    <section id="meni" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="display-6 fw-bold">Naš meni</h2>
+                <p class="text-muted mb-0">Tradicionalni okusi u modernoj prezentaciji.</p>
+            </div>
+
+            <ul class="nav nav-tabs justify-content-center mb-4" id="meniTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="predjela-tab" data-bs-toggle="tab" data-bs-target="#predjela"
+                        type="button" role="tab" aria-controls="predjela" aria-selected="true">Predjela</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="glavna-tab" data-bs-toggle="tab" data-bs-target="#glavna" type="button"
+                        role="tab" aria-controls="glavna" aria-selected="false">Glavna jela</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="deserti-tab" data-bs-toggle="tab" data-bs-target="#deserti" type="button"
+                        role="tab" aria-controls="deserti" aria-selected="false">Deserti</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pica-tab" data-bs-toggle="tab" data-bs-target="#pica" type="button"
+                        role="tab" aria-controls="pica" aria-selected="false">Pića</button>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="meniTabsContent">
+                <div class="tab-pane fade show active" id="predjela" role="tabpanel" aria-labelledby="predjela-tab">
+                    <div class="row g-4">
+                        <div class="col-sm-6 col-md-4">
+                            <div class="card h-100 menu-card">
+                                <img src="slike/juva.jpeg" class="card-img-top" alt="Domaca juha">
+                                <div class="card-body">
+                                    <h5 class="card-title">Domaća juha</h5>
+                                    <p class="card-text">Bistra juha s domaćim rezancima i svježim povrćem.</p>
+                                    <span class="fw-bold menu-price">6.50 KM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="card h-100 menu-card">
+                                <img src="slike/ustipci_sa_spanacem_tx_1.jpg" class="card-img-top" alt="Ustipci i kajmak">
+                                <div class="card-body">
+                                    <h5 class="card-title">Uštipci i kajmak</h5>
+                                    <p class="card-text">Hrskavi uštipci posluzeni s kajmakom i domacim sirom.</p>
+                                    <span class="fw-bold menu-price">8.00 KM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="card h-100 menu-card">
+                                <img src="slike/burek-scaled.jpg" class="card-img-top" alt="Pita na komad">
+                                <div class="card-body">
+                                    <h5 class="card-title">Domaća pita</h5>
+                                    <p class="card-text">Domaća pita po izboru: sirnica, krompiruša ili zeljanica.</p>
+                                    <span class="fw-bold menu-price">7.00 KM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="glavna" role="tabpanel" aria-labelledby="glavna-tab">
+                    <div class="row g-4">
+                        <div class="col-sm-6 col-md-4">
+                            <div class="card h-100 menu-card">
+                                <img src="slike/beef-soup-potatoes12.webp" class="card-img-top" alt="Teleca corba">
+                                <div class="card-body">
+                                    <h5 class="card-title">Teleća čorba</h5>
+                                    <p class="card-text">Kremasta čorba od teletine, po receptu nase kuće.</p>
+                                    <span class="fw-bold menu-price">10.50 KM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="card h-100 menu-card">
+                                <img src="slike/Sarma_shutterstock_2378699909.jpg" class="card-img-top" alt="Sarma">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sarma</h5>
+                                    <p class="card-text">Tradicionalna sarma od kiselog kupusa i junetine.</p>
+                                    <span class="fw-bold menu-price">14.00 KM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="card h-100 menu-card">
+                                <img src="slike/piletina-u-umaku-og-gljiva-1200x800.jpg" class="card-img-top" alt="Begova corba i piletina">
+                                <div class="card-body">
+                                    <h5 class="card-title">Piletina Jezero</h5>
+                                    <p class="card-text">File piletine s povrćem i laganim umakom od vrhnja.</p>
+                                    <span class="fw-bold menu-price">15.50 KM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="deserti" role="tabpanel" aria-labelledby="deserti-tab">
+                    <div class="row g-4">
+                        <div class="col-sm-6 col-md-4">
+                            <div class="card h-100 menu-card">
+                                <img src="slike/baklava.jpg" class="card-img-top" alt="Baklava">
+                                <div class="card-body">
+                                    <h5 class="card-title">Baklava</h5>
+                                    <p class="card-text">Slatka baklava s orasima.</p>
+                                    <span class="fw-bold menu-price">5.50 KM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="card h-100 menu-card">
+                                <img src="slike/tufahja.jpg" class="card-img-top" alt="Tufahija">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tufahija</h5>
+                                    <p class="card-text">Pecena jabuka punjena orasima, sa slagom i sirupom.</p>
+                                    <span class="fw-bold menu-price">6.00 KM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="card h-100 menu-card">
+                                <img src="slike/umrasica.webp" class="card-img-top" alt="Hurmasica">
+                                <div class="card-body">
+                                    <h5 class="card-title">Hurmašica</h5>
+                                    <p class="card-text">Mekani tradicionalni kolac preliven laganim agdom.</p>
+                                    <span class="fw-bold menu-price">5.00 KM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="pica" role="tabpanel" aria-labelledby="pica-tab">
+                    <div class="row g-4">
+                        <div class="col-sm-6 col-md-4">
+                            <div class="card h-100 menu-card">
+                                <img src="slike/cok.jpg" class="card-img-top" alt="Domaci sok">
+                                <div class="card-body">
+                                    <h5 class="card-title">Domaći sok</h5>
+                                    <p class="card-text">Svježe cijeđeni sok od voća po želji.</p>
+                                    <span class="fw-bold menu-price">4.50 KM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="card h-100 menu-card">
+                                <img src="slike/fuka.jpg" class="card-img-top" alt="Bosanska kafa">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bosanska kahva</h5>
+                                    <p class="card-text">Servirana u fildzanu, uz rahat lokum.</p>
+                                    <span class="fw-bold menu-price">3.50 KM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="card h-100 menu-card">
+                                <img src="slike/ćaj.jpg" class="card-img-top" alt="Domaci caj">
+                                <div class="card-body">
+                                    <h5 class="card-title">Domaći čaj</h5>
+                                    <p class="card-text">Biljni čaj od mente, kamilice ili lipe.</p>
+                                    <span class="fw-bold menu-price">3.00 KM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
     <!-- ============================================
