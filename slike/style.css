@@ -1,0 +1,64 @@
+/* ================================================
+   Restoran Jezero — Custom CSS
+   ================================================
+   UPUTE:
+   - Mijenjaj Bootstrap varijable u :root
+   - Custom stilove piši ispod sekcije s varijablama
+   - NE dirај bootstrap.min.css
+   ================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap');
+
+:root {
+    --bs-primary: #7a1f2b;
+    --bs-primary-rgb: 122, 31, 43;
+    --bs-body-font-family: 'Lato', sans-serif;
+    --bs-border-radius: 0.75rem;
+    --cream: #f6efe2;
+    --gold: #c89b3c;
+    --brown: #2f1f1a;
+}
+
+body {
+    background-color: var(--cream);
+    color: var(--brown);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+#meni .nav-tabs .nav-link {
+    color: var(--brown);
+    font-weight: 700;
+}
+
+#meni .nav-tabs .nav-link.active {
+    color: #fff;
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.menu-card {
+    border: 1px solid rgba(47, 31, 26, 0.15);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.menu-card .card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+.menu-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 22px rgba(47, 31, 26, 0.2);
+}
+
+.menu-price {
+    color: var(--gold);
+}

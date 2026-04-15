@@ -10,44 +10,10 @@
 <body>
 
     <!-- ============================================
-         NAVIGACIJA — radi: [Luka Pasalic - Lead Dev]
+         NAVIGACIJA — radi: [ime učenika - Lead Dev]
          Branch: feature/navigacija
          ============================================ -->
 
-    <nav id="pocetna" class="navbar navbar-expand-lg navbar-dark bg-jezero-nav sticky-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#pocetna">Restoran Jezero</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
-                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="mainNavbar">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#pocetna">Početna</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#meni">Meni</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#rezervacija">Rezervacija</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#o-nama">O nama</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#kontakt">Kontakt</a>
-                    </li>
-                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
-                        <button class="btn btn-primary px-3" type="button" data-bs-toggle="modal" data-bs-target="#rezervacijaModal">
-                            Rezerviraj stol
-                        </button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
     <!-- TODO: Navbar s logom "Restoran Jezero", linkovima
          (Početna, Meni, Rezervacija, O nama, Kontakt)
          i gumbom "Rezerviraj stol" koji otvara modal.
@@ -55,7 +21,7 @@
 
 
     <!-- ============================================
-         HERO — radi: Karlo Buljan (UI Dev)
+         HERO — radi: [Viktor Čačija - UI Dev]
          Branch: feature/hero
          ============================================ -->
 
@@ -63,60 +29,9 @@
          min-height 90vh, naslov restorana, kratak opis,
          dva gumba: "Pogledaj meni" i "Rezerviraj stol".
          Centriran sadržaj. -->
-    <!-- ===== KARLO BULJAN START: HERO SEKCIJA ===== -->
-    <!-- HERO WRAPPER: min-height 90vh + pozadinska slika + centriranje sadržaja -->
-    <header id="hero" class="hero-section d-flex align-items-center">
-        <!-- CONTAINER: ograničava širinu sadržaja i drži layout urednim -->
-        <div class="container">
-            <!-- ROW + COL: Bootstrap grid za responzivnu širinu teksta -->
-            <div class="row">
-                <!-- col-lg-7: širi tekst na desktopu, puni ekran na mobitelu -->
-                <div class="col-12 col-lg-7">
-                    <!-- badge: mali dekorativni label iznad naslova -->
-                    <span class="badge rounded-pill bg-warning text-dark px-3 py-2 mb-3">
-                        Tradicionalna kuhinja uz pogled na more
-                    </span>
-
-                    <!-- display-3: veliki naslov, fw-bold: deblji font -->
-                    <h1 class="display-3 fw-bold text-light mb-3">
-                        Restoran Jezero
-                    </h1>
-
-                    <!-- lead: istaknut uvodni tekst -->
-                    <p class="lead text-light mb-4">
-                        Uživajte u vrhunskoj hrani na terasi uz miris mora i zalazak
-                        sunca.
-                    </p>
-
-                    <!-- d-flex + gap: horizontalni raspored dugmadi sa razmakom -->
-                    <div class="d-flex flex-wrap gap-3">
-                        <!-- btn btn-primary: glavno CTA dugme -->
-                        <a href="#meni" class="btn btn-primary btn-lg px-4 py-2">
-                            Pogledaj meni
-                        </a>
-                        <!-- btn-outline-light: sekundarno dugme -->
-                        <a href="#rezervacija" class="btn btn-outline-light btn-lg px-4 py-2" data-bs-toggle="modal" data-bs-target="#rezervacijaModal">
-                            Rezerviraj stol
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- ===== KARLO BULJAN END: HERO SEKCIJA ===== -->
 
 
     <!-- ============================================
-         MENI — radi: [ime učenika - UI Dev]
-         Branch: feature/meni
-         ============================================ -->
-
-    <!-- TODO: Sekcija s naslovom "Naš meni".
-         Tabovi (Bootstrap nav-tabs) ili accordion za kategorije:
-         Predjela / Glavna jela / Deserti / Pića.
-         Svaka kategorija: min 3 kartice s nazivom, opisom i cijenom.
-         Grid: col-md-4. -->
-  <!-- ============================================
          MENI — radi: Viktor Cacija
          Branch: feature/meni
          ============================================ -->
@@ -151,7 +66,7 @@
                     <div class="row g-4">
                         <div class="col-sm-6 col-md-4">
                             <div class="card h-100 menu-card">
-                                <img src="slike/juva.jpeg" class="card-img-top" alt="Domaca juha">
+                                <img src="juva.jpeg" class="card-img-top" alt="Domaca juha">
                                 <div class="card-body">
                                     <h5 class="card-title">Domaća juha</h5>
                                     <p class="card-text">Bistra juha s domaćim rezancima i svježim povrćem.</p>
@@ -161,7 +76,7 @@
                         </div>
                         <div class="col-sm-6 col-md-4">
                             <div class="card h-100 menu-card">
-                                <img src="slike/ustipci_sa_spanacem_tx_1.jpg" class="card-img-top" alt="Ustipci i kajmak">
+                                <img src="ustipci_sa_spanacem_tx_1.jpg" class="card-img-top" alt="Ustipci i kajmak">
                                 <div class="card-body">
                                     <h5 class="card-title">Uštipci i kajmak</h5>
                                     <p class="card-text">Hrskavi uštipci posluzeni s kajmakom i domacim sirom.</p>
@@ -171,7 +86,7 @@
                         </div>
                         <div class="col-sm-6 col-md-4">
                             <div class="card h-100 menu-card">
-                                <img src="slike/burek-scaled.jpg" class="card-img-top" alt="Pita na komad">
+                                <img src="burek-scaled.jpg" class="card-img-top" alt="Pita na komad">
                                 <div class="card-body">
                                     <h5 class="card-title">Domaća pita</h5>
                                     <p class="card-text">Domaća pita po izboru: sirnica, krompiruša ili zeljanica.</p>
@@ -186,7 +101,7 @@
                     <div class="row g-4">
                         <div class="col-sm-6 col-md-4">
                             <div class="card h-100 menu-card">
-                                <img src="slike/beef-soup-potatoes12.webp" class="card-img-top" alt="Teleca corba">
+                                <img src="beef-soup-potatoes12.webp" class="card-img-top" alt="Teleca corba">
                                 <div class="card-body">
                                     <h5 class="card-title">Teleća čorba</h5>
                                     <p class="card-text">Kremasta čorba od teletine, po receptu nase kuće.</p>
@@ -196,7 +111,7 @@
                         </div>
                         <div class="col-sm-6 col-md-4">
                             <div class="card h-100 menu-card">
-                                <img src="slike/Sarma_shutterstock_2378699909.jpg" class="card-img-top" alt="Sarma">
+                                <img src="Sarma_shutterstock_2378699909.jpg" class="card-img-top" alt="Sarma">
                                 <div class="card-body">
                                     <h5 class="card-title">Sarma</h5>
                                     <p class="card-text">Tradicionalna sarma od kiselog kupusa i junetine.</p>
@@ -206,7 +121,7 @@
                         </div>
                         <div class="col-sm-6 col-md-4">
                             <div class="card h-100 menu-card">
-                                <img src="slike/piletina-u-umaku-og-gljiva-1200x800.jpg" class="card-img-top" alt="Begova corba i piletina">
+                                <img src="piletina-u-umaku-og-gljiva-1200x800.jpg" class="card-img-top" alt="Begova corba i piletina">
                                 <div class="card-body">
                                     <h5 class="card-title">Piletina Jezero</h5>
                                     <p class="card-text">File piletine s povrćem i laganim umakom od vrhnja.</p>
@@ -221,7 +136,7 @@
                     <div class="row g-4">
                         <div class="col-sm-6 col-md-4">
                             <div class="card h-100 menu-card">
-                                <img src="slike/baklava.jpg" class="card-img-top" alt="Baklava">
+                                <img src="baklava.jpg" class="card-img-top" alt="Baklava">
                                 <div class="card-body">
                                     <h5 class="card-title">Baklava</h5>
                                     <p class="card-text">Slatka baklava s orasima.</p>
@@ -231,7 +146,7 @@
                         </div>
                         <div class="col-sm-6 col-md-4">
                             <div class="card h-100 menu-card">
-                                <img src="slike/tufahja.jpg" class="card-img-top" alt="Tufahija">
+                                <img src="tufahja.jpg" class="card-img-top" alt="Tufahija">
                                 <div class="card-body">
                                     <h5 class="card-title">Tufahija</h5>
                                     <p class="card-text">Pecena jabuka punjena orasima, sa slagom i sirupom.</p>
@@ -241,7 +156,7 @@
                         </div>
                         <div class="col-sm-6 col-md-4">
                             <div class="card h-100 menu-card">
-                                <img src="slike/umrasica.webp" class="card-img-top" alt="Hurmasica">
+                                <img src="umrasica.webp" class="card-img-top" alt="Hurmasica">
                                 <div class="card-body">
                                     <h5 class="card-title">Hurmašica</h5>
                                     <p class="card-text">Mekani tradicionalni kolac preliven laganim agdom.</p>
@@ -256,7 +171,7 @@
                     <div class="row g-4">
                         <div class="col-sm-6 col-md-4">
                             <div class="card h-100 menu-card">
-                                <img src="slike/cok.jpg" class="card-img-top" alt="Domaci sok">
+                                <img src="cok.jpg" class="card-img-top" alt="Domaci sok">
                                 <div class="card-body">
                                     <h5 class="card-title">Domaći sok</h5>
                                     <p class="card-text">Svježe cijeđeni sok od voća po želji.</p>
@@ -266,7 +181,7 @@
                         </div>
                         <div class="col-sm-6 col-md-4">
                             <div class="card h-100 menu-card">
-                                <img src="slike/fuka.jpg" class="card-img-top" alt="Bosanska kafa">
+                                <img src="fuka.jpg" class="card-img-top" alt="Bosanska kafa">
                                 <div class="card-body">
                                     <h5 class="card-title">Bosanska kahva</h5>
                                     <p class="card-text">Servirana u fildzanu, uz rahat lokum.</p>
@@ -276,7 +191,7 @@
                         </div>
                         <div class="col-sm-6 col-md-4">
                             <div class="card h-100 menu-card">
-                                <img src="slike/ćaj.jpg" class="card-img-top" alt="Domaci caj">
+                                <img src="ćaj.jpg" class="card-img-top" alt="Domaci caj">
                                 <div class="card-body">
                                     <h5 class="card-title">Domaći čaj</h5>
                                     <p class="card-text">Biljni čaj od mente, kamilice ili lipe.</p>
@@ -289,7 +204,6 @@
             </div>
         </div>
     </section>
-
 
 
     <!-- ============================================
@@ -305,38 +219,13 @@
 
 
     <!-- ============================================
-         O NAMA + FOOTER — radi: [Luka Pasalic - Lead Dev]
+         O NAMA + FOOTER — radi: [ime učenika - Lead Dev]
          Branch: feature/footer
          ============================================ -->
 
-    <footer id="kontakt" class="footer-jezero text-light pt-5 pb-3 mt-5">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-12 col-md-4">
-                    <h5 class="mb-3">Restoran Jezero</h5>
-                    <p class="mb-1">Jezerska 12, 71000 Sarajevo</p>
-                    <p class="mb-0">Telefon: +387 33 123 456</p>
-                </div>
-                <div class="col-12 col-md-4">
-                    <h5 class="mb-3">Radno vrijeme</h5>
-                    <p class="mb-1">Ponedjeljak - Petak: 10:00 - 23:00</p>
-                    <p class="mb-1">Subota: 11:00 - 00:00</p>
-                    <p class="mb-0">Nedjelja: 11:00 - 22:00</p>
-                </div>
-                <div class="col-12 col-md-4">
-                    <h5 class="mb-3">Brzi linkovi</h5>
-                    <ul class="list-unstyled mb-0">
-                        <li><a class="footer-link" href="#pocetna">Početna</a></li>
-                        <li><a class="footer-link" href="#meni">Meni</a></li>
-                        <li><a class="footer-link" href="#rezervacija">Rezervacija</a></li>
-                        <li><a class="footer-link" href="#o-nama">O nama</a></li>
-                    </ul>
-                </div>
-            </div>
-            <hr class="border-light border-opacity-25 my-4">
-            <p class="text-center small mb-0">&copy; 2026 Restoran Jezero. Sva prava zadržana.</p>
-        </div>
-    </footer>
+    <!-- TODO: Kratka "O nama" sekcija s tekstom i slikom.
+         Footer s adresom, radnim vremenom i copyright tekstom.
+         Navigacijski linkovi u footeru. -->
 
 
     <!-- Modal za rezervaciju — koriste i navigacija i hero -->
