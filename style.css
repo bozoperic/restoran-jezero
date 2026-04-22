@@ -3,7 +3,48 @@
    Bootstrap-only projekt (bez custom JS-a)
    ================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap');
+
+   :root {
+       /* TODO (CSS Dev / Lead Dev):
+          Postavi boje brenda restorana.
+          Preporučena paleta: tople, zemljane boje.
+          Primjer: bordo, zlatna, krem.
+   
+          --bs-primary: ;
+          --bs-primary-rgb: ;
+          --bs-body-font-family: ;
+          --bs-border-radius: ;
+       */
+       --bs-primary: #d4a64a;
+       --bs-primary-rgb: 212, 166, 74;
+       --bs-body-font-family: 'Lato', sans-serif;
+       --bs-border-radius: 0.6rem;
+       --jezero-krem: #f6efe2;
+       --jezero-smedja: #2f2118;
+   }
+   
+   /* TIPOGRAFIJA: naslovi koriste Playfair zbog elegantnijeg izgleda */
+   h1, h2, h3, h4, h5, h6 {
+       font-family: 'Playfair Display', serif;
+   }
+
+   /* Footer (Luka Pasalic): elegantan i topao završetak stranice */
+   .footer-jezero {
+       background-color: #2f2118;
+   }
+
+   .footer-link {
+       color: #f6efe2;
+       text-decoration: none;
+       transition: color 0.2s ease;
+   }
+
+   .footer-link:hover,
+   .footer-link:focus {
+       color: #d4a64a;
+   }
+   @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap');
 
 :root {
   /* Brand palette (tople, zemljane boje) */
